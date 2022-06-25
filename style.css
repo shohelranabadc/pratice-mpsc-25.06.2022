@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+}
+
+body{
+    background-color: #EFEFEF;
+}
+
+.containter{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+header{
+    width: 100%;
+}
+
+/* Start top header */
+.header_top{
+    width: 100%;
+    background-color: #47548A;
+    overflow: hidden;
+    height: 55px;
+}
+
+.header_top p{
+    float: left;
+    padding: 15px 20px;
+    color: #fff;
+    width: 25%;
+}
+
+.header_top a{
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    float: left;
+    margin-top: 7px;
+    color: #fff;
+    width: 25%;
+}
+
+.top_header_button{
+    background-color: red;
+    box-shadow: 3px 6px #242A45;
+    font-size: 15px;
+    text-align: center;
+    position: relative;
+    right: 50px;
+}
+
+.top_header_button:hover{
+    background-color: #008000
+}
+/* End top header */
+
+/* Start header middle school logo and name */
+.header_middle{
+    width: 100%;
+    background-color: #2F1958;
+    float: left;
+    height: 120px;
+}
+
+.school_logo{
+    position: relative;
+    width: 25%;
+    float: left;
+}
+
+.school_logo img{
+    display: block;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    top: 15px;
+    right: 0;
+}
+
+.institution_name{
+    width: 75%;
+    padding: 30px 0px;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+.institution_name h1, .institution_name h2{
+    color: #fff;
+    text-align:center;
+}
+
+.institution_name h1{
+    font-size: 2.8em;
+    position: relative;
+    left: 12%;
+}
+
+.institution_name h2{
+    font-size: 1.5em;
+    position: relative;
+    left: 12%;
+}
+
+/* Start nav bar */
+nav{
+    width: 100%;
+    background-color: #2F1958;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li{
+    list-style-type: none;
+    float: left;
+}
+
+nav ul li:hover a{
+    /* background-color: rgba(0,0,0,0.6); */
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    display: inline-block;
+    padding: 15px 25px;
+}
+
+.dropdown_content a:hover{
+    background-color: #ddd;
+}
+
+.dropdown_content a{
+    display: block;
+    color: #333;
+}
+
+.dropdown_content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown_content{
+    display:block;
+}
+/* End nav bar */
+/* End header middle school logo and name */
+
+
+/* Start marquee section */
+.marqu_div{
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.marqu_span{
+    color: red;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.marqu_div a{
+    color: black;
+    text-decoration: none;
+}
+
+.marqu_div a:hover{
+    text-decoration: underline;
+}
+/* End marquee section */
+
+
+/* Start Notice Board */
+.notice_board{
+    width: 90%;
+    background-color: #fff;
+    position: relative;
+    top: 10px;
+    margin: 0 auto;
+    padding: 15px;
+    /* height: 100px; */
+    overflow: hidden;
+}
+
+.ntc_left, .ntc_right{
+    width: 46%;
+    float: left;
+    
+}
+
+.ntc_left{
+    margin-right: 40px;
+}
+
+.ntc_right{
+    margin-left: 40px;
+}
+
+.notice_board a{
+    display: inline-block;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid green;
+    width: 100%;
+    text-decoration: none;
+    color: red;
+}
+
+.notice_board a:hover{
+    background-color:green;
+    color: #fff;
+    text-decoration: underline;
+}
+/* End Notice Board */
+
+
+
+/* start main section */
+section{
+    width: 90%;
+    margin: 20px auto;
+}
+
+.main_section_row{
+    width: 65%;
+}
+
+.left_col1{
+    width:100%;
+}
+
+.left_col1_subrow1{
+    width: 100%;
+
+}
+
+/* start slide show section */
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+
+.mySlides img{
+    position: relative;
+    /* top: 15px; */
+    border: 3px solid #fff;
+}
+
+.shadow{
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+}
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+/* End slide show important info section */
+
+
+/* Start teacher massage */
+.left_col1_subrow2{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.Leftcol1_subrow2_col1{
+    width: 48%;
+    float: left;
+    padding: 10px;
+    text-align: center;
+    margin-right: 15px;
+    height: 350px;
+}
+
+.leftcol1_subrow2_col2{
+    width: 48%;
+    float: left;
+    padding: 10px;
+    text-align: center;
+    margin-left: 15px;
+    height: 350px;
+}
+
+/* End teacher massage */
+/* about section */
+.leftcol1_subrow3{
+    width: 100%;
+    height: 350px;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+
+
+
+
+/* End main section */
+
+
